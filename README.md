@@ -4,35 +4,39 @@
 Classes <br> 
   In the code, there are 8 classes, and there are two main ones: entity and room, and six 
   subclasses: stone, hole, animated_ent, human, dragon, and monster. For better coordination I
-  have created a flowchart of the programm:
+  have created a flowchart of the programm: <br> 
       ![image](https://github.com/VerkholatIvan/Entity-Interactive-Environment-Board/assets/123458146/e54dea59-f740-4dcc-ad22-6471687e9782)
 
+<br> 
+<br> 
 
-  Each class has its own role:
+  Each class has its own role: <br> 
     • Entity - class for containing all of the common entity information including both animated 
     and non-animated ones, for example, location coordinates. From the flowchart, it can be 
-    seen that all of the subclasses are connected with it, except from “room”.
+    seen that all of the subclasses are connected with it, except from “room”. <br> 
     • Stone – class, which contains information only about its symbol and location since this 
     entity has no special attributes. Moreover, all of the non-animated objects have no 
-    special elements, so they do not require extra classes.
+    special elements, so they do not require extra classes. <br> 
     • Hole – class similar to stone, but has a depth attribute, which is randomized each new 
-    board.
+    board. <br> 
     • Animated – main class for all of the animated entities, in other words, those, who can 
     move through the map. All of the movable objects have health, which decreases with 
-    every move.
+    every move. <br> 
     • Human – class, which has a moving function and a Name as a string, which can be 
     shown by using the “void show_info();” method. The movement of each step is going 
     right on the board unless it is the end of the map or the place is not empty. Health is 
-    reduced by one each step.
+    reduced by one each step. <br> 
     • Dragon – another animated class, which moves randomly up, down, left, and right, the 
     conditions for movement are the same, except for always moving right. Health is 
-    reduced by the random number from 0 to 5.
+    reduced by the random number from 0 to 5. <br> 
     • Monster – the last movable entity, which jumps randomly up, down, left, and right, the 
     distance of the step depends on the monster’s strength, which is a random number from 
-    0 to 5. Health is reduced by the entity’s strength.
+    0 to 5. Health is reduced by the entity’s strength. <br> 
 
+<br> 
+<br> 
 
-Testing
+Testing <br> 
   After completing the code, I started to put the wrong input to find where it can break the code. 
   For example, in the main part of the code there is a while loop, which except a number as an 
   input for the switch cases, but if the user enters a string, it will lead to the infinite loop. To 
@@ -42,8 +46,10 @@ Testing
   this debugging is, when the user enters, for example, two letters, the program will show that he 
   gave incorrect data twice.
   
+<br> 
+<br> 
   
-Bugs (Faced problems and their solutions)
+Bugs (Faced problems and their solutions) <br> 
   One of the biggest problems was resetting the room function, which was not so obvious to code 
   in the first place because the main idea of resetting the room is to create a new object from the 
   class, but it is impossible to do it whenever the code is already running. So, there appeared a 
