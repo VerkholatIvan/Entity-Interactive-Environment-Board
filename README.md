@@ -1,7 +1,7 @@
 # Entity-Interactive-Environment-Board
 
 
-Classes
+Classes <br> 
   In the code, there are 8 classes, and there are two main ones: entity and room, and six 
   subclasses: stone, hole, animated_ent, human, dragon, and monster. For better coordination I
   have created a flowchart of the programm:
